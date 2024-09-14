@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_test_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true # Optional: to show SQL queries in logs
+    ddl-auto: update # Optional: configure schema generation (e.g., validate, update, create, create-drop)
+
+
